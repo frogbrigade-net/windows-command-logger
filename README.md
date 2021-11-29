@@ -14,16 +14,16 @@ windows-command-logger works on Windows versions:
 Simply call logging.bat with "LOG" as the first argument, the log level as the second argument, and the log message as the third argument.
 
 ```bat
->SET LOG=CALL modules\logging.bat LOG
->%LOG% D "This is DEBUG level log message."
+> SET LOG=CALL modules\logging.bat LOG
+> %LOG% D "This is DEBUG level log message."
 2021-11-29 08:52:35.65 [D] This is DEBUG level log message.
->%LOG% I "This is INFO level log message."
+> %LOG% I "This is INFO level log message."
 2021-11-29 08:53:02.41 [I] This is INFO level log message.
->%LOG% W "This is WARNING level log message."
+> %LOG% W "This is WARNING level log message."
 2021-11-29 08:53:12.89 [W] This is WARNING level log message.
->%LOG% E "This is ERROR level log message."
+> %LOG% E "This is ERROR level log message."
 2021-11-29 08:53:24.36 [E] This is ERROR level log message.
->%LOG% ANY_LOG_LEVEL "This is ANY LOG LEVEL log message."
+> %LOG% ANY_LOG_LEVEL "This is ANY LOG LEVEL log message."
 2021-11-29 08:54:42.34 [A] This is ANY LOG LEVEL log message.
 ```
 
